@@ -1,0 +1,10 @@
+<a href="/cadastro"><button>Adicionar novo post</button></a>
+<h1>Lista de Postagens:</h1>
+
+{{#each posts}}
+    <h2>{{titulo}}</h2>
+    <small>{{date}}</small>
+    <p>{{conteudo}}</p>
+    <a href="/deletaPost/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
